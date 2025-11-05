@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "travian bots"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ipykernel = "^6.29.5"
+pandas = "^2.2.3"
+numpy = "^2.2.4"
+pyautogui = "^0.9.54"
+pygetwindow = "^0.0.9"
+requests = "^2.32.3"
+geopandas = "^1.0.1"
+matplotlib = "^3.10.3"
+flopy = "^3.9.3"
+scikit-learn = "^1.7.2"
+streamlit = "^1.51.0"
+
+
+[[tool.poetry.source]]
+name = "wb_pypi"
+url = "https://pypi.wbad.witteveenbos.com/simple/"
+default = false
+secondary = true
+
+[tool.poetry.group.dev.dependencies]
+nuitka = "^2.7.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
