@@ -31,8 +31,16 @@ xp_per_unit = [1, 1, 1, 1, 2, 2, 3, 3, 3, 5]
 
 # -------------------------- Core helpers (unchanged logic) --------------------------
 def calculate_distance(x1, y1, x2, y2):
-    return round(math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2), 2)
 
+    deltax = x2 - x1
+    if deltax >  350:
+        deltax = 401 - deltax
+
+    deltay = y2 - y1
+    if deltay >  350:
+        deltay = 401 - deltay
+
+    return round(math.sqrt(deltax**2 + deltay**2), 2)
 
 def extract_data(entry: str, x_vil: int, y_vil: int):
     x_match = re.search(r'"x":\s*(-?\d+)', entry)
@@ -343,3 +351,4 @@ st.caption(
     "Note: Some hosts (e.g., PythonAnywhere free) block outgoing requests to game servers. "
     "For reliable results, run locally or on a VPS with unrestricted internet."
 )
+
