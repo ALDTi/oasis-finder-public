@@ -269,7 +269,7 @@ with st.expander("Inputs"):
     c7, c8, c9, c10 = st.columns(4)
     fullmap = c7.checkbox("Scan 180×180 (fullmap window)", value=False)
     hero_speed = c8.number_input("Hero speed", value=17, step=1, min_value=1)
-    borstplaat = c9.number_input("Armor reduction (borstplaat)", value=0, step=1, min_value=0)
+    borstplaat = c9.number_input("Armor reduction (borstplaat)", value=3, step=1, min_value=0)
     max_distance = c10.number_input("Max distance", value=30.0, step=1.0, min_value=1.0)
 
     c11, c12 = st.columns(2)
