@@ -10,8 +10,8 @@ import pandas as pd
 import streamlit as st
 
 # -------------------------- Defaults / constants --------------------------
-DEFAULT_SERVER = "ts4.x1.international.travian.com"
-GOOGLE_SHEET_ID_DEFAULT = "1Ev6h8-rTbCHoK2vNEyYpBSVs4AvJ43XzPQ3CuC6sTSw"
+DEFAULT_SERVER = "ts12.x1.europe.travian.com"
+GOOGLE_SHEET_ID_DEFAULT = "1-9hAUMfgoehZ_ILgsVDwu2ib1j4LlXd4RwwUhvrMO-Y"
 GOOGLE_SHEET_NAME_DEFAULT = "cookie"
 
 unit_mapping = {
@@ -247,9 +247,9 @@ st.title("Oasis Finder")
 
 with st.expander("Inputs"):
     c1, c2, c3, c4 = st.columns(4)
-    x_vil = c1.number_input("Village X (x_vil)", value=15, step=1)
-    y_vil = c2.number_input("Village Y (y_vil)", value=-66, step=1)
-    hero_atk_pts = c3.number_input("Hero Attack Points", value=12, step=1, min_value=0)
+    x_vil = c1.number_input("Village X (x_vil)", value=50, step=1)
+    y_vil = c2.number_input("Village Y (y_vil)", value=25, step=1)
+    hero_atk_pts = c3.number_input("Hero Attack Points", value=44, step=1, min_value=0)
     server = c4.text_input("Server", value=DEFAULT_SERVER)
 
     c5, c6 = st.columns(2)
