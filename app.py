@@ -247,8 +247,8 @@ st.title("Oasis Finder")
 
 with st.expander("Inputs"):
     c1, c2, c3, c4 = st.columns(4)
-    x_vil = c1.number_input("Village X (x_vil)", value=50, step=1)
-    y_vil = c2.number_input("Village Y (y_vil)", value=25, step=1)
+    x_vil = c1.number_input("Village X (x_vil)", value=-22, step=1)
+    y_vil = c2.number_input("Village Y (y_vil)", value=51, step=1)
     hero_atk_pts = c3.number_input("Hero Attack Points", value=44, step=1, min_value=0)
     server = c4.text_input("Server", value=DEFAULT_SERVER)
 
