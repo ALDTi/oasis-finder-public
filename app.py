@@ -10,7 +10,7 @@ import pandas as pd
 import streamlit as st
 
 # -------------------------- Defaults / constants --------------------------
-DEFAULT_SERVER = "ts12.x1.europe.travian.com"
+DEFAULT_SERVER = "ts1.x1.europe.travian.com"
 GOOGLE_SHEET_ID_DEFAULT = "1-9hAUMfgoehZ_ILgsVDwu2ib1j4LlXd4RwwUhvrMO-Y"
 GOOGLE_SHEET_NAME_DEFAULT = "cookie"
 
